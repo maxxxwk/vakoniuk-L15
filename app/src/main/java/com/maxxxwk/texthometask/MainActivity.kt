@@ -35,10 +35,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun checkValidity(name: String): Boolean {
-        if (name.contains(Regex("[0-9]"))) {
-            showErrorMessage("Name shouldn't contains digits!")
-            return false
-        }
         if (name.split(" ").size != 2) {
             showErrorMessage("You should enter first name and last name!")
             return false
